@@ -1,4 +1,21 @@
-" Enable CursorLine
+"----------- PLUGINS -----------
+   
+" Pathogen
+execute pathogen#infect()
+filetype off
+syntax on
+filetype plugin indent on
+
+" Gundo
+nnoremap <F5> :MundoToggle<CR>
+
+" Persistent Undo
+set undofile
+set undodir=~/.vimundo
+
+"----------- FUNCTIONALITY -----------
+
+" Enable cursor line
 set cursorline
 
 " Change color when entering Insert Mode
