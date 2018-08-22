@@ -1,5 +1,4 @@
 "----------- PLUGINS -----------
-   
 " Pathogen
 execute pathogen#infect()
 filetype off
@@ -15,6 +14,10 @@ set undodir=~/.vimundo
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Better Whitespace
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 "----------- FUNCTIONALITY -----------
 
@@ -39,8 +42,11 @@ autocmd InsertLeave * highlight  CursorLine ctermbg=None ctermfg=None
  set shiftwidth=4
  set autoindent
 
- " Fix backspace
+" Fix backspace
  set backspace=indent,eol,start
+
+" Spellcheck
+set spelllang=en
 
 "----------- COLOR THEME ----------- 
 syntax on
